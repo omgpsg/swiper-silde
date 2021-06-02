@@ -1,0 +1,39 @@
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    z-index: 4;
+
+    &-inner {
+        display: flex;
+        align-items: center;
+        height:100%;
+    }
+
+    &.light{
+        color:#ffffff;
+    }
+
+    &.dark{
+        color:#000;
+    }
+
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    font-size:300px;
+}
+
+[data-header-type = "light"] {
+    background-color:#000;
+    color:#ffffff
+}
+[data-header-type = "dark"] {
+    background-color:#f1f1f1;
+    color:#000
+}
